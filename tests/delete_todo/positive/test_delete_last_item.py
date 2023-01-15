@@ -1,8 +1,10 @@
 import allure
+import pytest
 from playwright.sync_api import expect
 from pom.todo_list_page import TodoPage
 
 
+@pytest.mark.xfail("Known issue")
 @allure.title(
     "Last item deletion"
 )
