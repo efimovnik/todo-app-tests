@@ -74,4 +74,3 @@ jobs:
         deploy_key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
         publish_branch: gh-pages
         publish_dir: allure-history
-        destination_dir: report
