@@ -42,7 +42,6 @@ jobs:
 
     - name: Prepare Allure history
       run: |
-        cd ..
         mkdir -p allure-results
 
     - name: Test with pytest
