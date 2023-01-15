@@ -1,0 +1,86 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sun Jan 15 23:03:39 GMT 2023","Sun Jan 15 23:03:44 GMT 2023","5236","tests.delete_todo.positive","test_delete_last_item","","","","Last item deletion","1. Precondition: Check if there is only 1 item in the list
+2. Click on X deletion button of the last item
+3. Validate that TODO list is empty
+"
+"passed","Sun Jan 15 23:03:21 GMT 2023","Sun Jan 15 23:03:21 GMT 2023","96","tests.complete_todo.positive","test_complete_last_item","","","","Completion of a last not completed item","Precondition: Check if There are 2 items on the list: 1 is completed, 1 is uncompleted
+click on '[]' parenthesis in order to complete last uncompleted items
+Selected item has changed its order - it appeared in the bottom of 'TODO list', 'X' appeared inside parenthesis"
+"passed","Sun Jan 15 23:03:45 GMT 2023","Sun Jan 15 23:03:45 GMT 2023","130","tests.uncomplete_todo.positive","test_uncomplete_item","","","","Un-completion of an item by button","Precondition: Check if there are 3 items on the list: 1 is uncomplete, 2 - are completed
+click on '[X]' parenthesis in order to un-complete one of the completed items
+Selected item has changed its order - it appeared in the top of 'TODO list', X disappeared inside parenthesis '[]' (on the left of the item name) "
+"passed","Sun Jan 15 23:03:21 GMT 2023","Sun Jan 15 23:03:21 GMT 2023","65","tests.create_todo.negative","test_create_invalid_name","","","","Creation of a new unique item by keyboard 'Enter' button","Precondition: Count total items before test
+Create a new todo item by input 'Enter'
+Validate that new item appeared in the top of TODO list"
+"passed","Sun Jan 15 23:03:20 GMT 2023","Sun Jan 15 23:03:20 GMT 2023","144","tests.complete_todo.positive","test_complete_item","","","","Completion of an item by button","Precondition: Check if there are 3 items on the list: 1 is completed, 2 - are uncompleted
+click on '[]' parenthesis in order to complete one of the uncompleted items
+Selected item has changed its order - it appeared in the bottom of 'TODO list', 'X' appeared inside parenthesis"
+"passed","Sun Jan 15 23:03:20 GMT 2023","Sun Jan 15 23:03:20 GMT 2023","112","tests.complete_todo.negative","test_not_complete_by_name","","","","Item is not completed by clicking on his name","Precondition: Check if there is an un-completed item in the list
+click on item name (not on '[]' parenthesis)
+Item hasn't been changed, it's still displayed un-complete"
+"passed","Sun Jan 15 23:03:44 GMT 2023","Sun Jan 15 23:03:44 GMT 2023","102","tests.delete_todo.positive","test_delete_non-unque_uncomplete_item","","","","Deletion of a non-unique uncompleted item","1. Precondition: Check if There are 3 uncompleted items, and 2 of them are with the same name - one in the bottom of the list, one - on the top
+ 2. Click on X deletion button of first completed item
+3. Validate that new item appeared in the top of TODO list
+Total number of elements decreased by 1
+"
+"passed","Sun Jan 15 23:03:27 GMT 2023","Sun Jan 15 23:03:27 GMT 2023","93","tests.create_todo.positive","test_create_by_keyboard","","","","Creation of a new unique item by keyboard 'Enter' button","Precondition: Count total items before test
+Create a new todo item by input 'Enter'
+Validate that new item appeared in the top of TODO list"
+"passed","Sun Jan 15 23:03:51 GMT 2023","Sun Jan 15 23:03:51 GMT 2023","115","tests.create_todo.positive","test_create_by_button","","","","Creation of a new unique item by button","Precondition: Count total items before test
+Create a new todo item by clicking '+' button
+Validate that new item appeared in the top of TODO list"
+"passed","Sun Jan 15 23:03:51 GMT 2023","Sun Jan 15 23:03:51 GMT 2023","64","tests.create_todo.negative","test_create_invalid_name","","","","Creation of a new unique item by keyboard 'Enter' button","Precondition: Count total items before test
+Create a new todo item by input 'Enter'
+Validate that new item appeared in the top of TODO list"
+"failed","Sun Jan 15 23:03:21 GMT 2023","Sun Jan 15 23:03:27 GMT 2023","5253","tests.create_todo.positive","test_create_1st_item","","","","Creation of a very first item","Precondition: Remove all the existent items from the list if they exist
+Create a new todo item by entering 'Enter'
+Validate that new item appeared in the top of TODO list"
+"failed","Sun Jan 15 23:03:33 GMT 2023","Sun Jan 15 23:03:38 GMT 2023","5220","tests.create_todo.positive","test_recreate_deleted_uncompleted_item","","","","Re-creation of an item after deletion (uncompleted)","Precondition: create, and delete new TODO item
+Create a new todo item with same name as in precondition
+Validate that new item appeared in the top of TODO list"
+"passed","Sun Jan 15 23:03:44 GMT 2023","Sun Jan 15 23:03:45 GMT 2023","101","tests.delete_todo.positive","test_delete_uncomplete_item","","","","Uncompleted item deletion","1. Precondition: Check if there is a uncompleted item in the list
+2. Click on X deletion button of first completed item
+3. Validate that new item appeared in the top of TODO list
+Total number of elements decreased by 1
+"
+"passed","Sun Jan 15 23:03:45 GMT 2023","Sun Jan 15 23:03:45 GMT 2023","113","tests.uncomplete_todo.negative","test_not_uncomplete_by_name","","","","Item is not un-completed by clicking on his name","Precondition: Check if there is an completed item in the list
+click on item name (not on '[X]' parenthesis)
+Item hasn't been changed, it's still displayed complete"
+"passed","Sun Jan 15 23:03:27 GMT 2023","Sun Jan 15 23:03:27 GMT 2023","249","tests.create_todo.positive","test_create_non-unique_checked","","","","Creation of a non-unique checked item","Precondition: Count total items before test, create item with 'Completed item' name, complete it
+Create a new todo item with same name as from precondition, by clicking '+' button
+Validate that there are 2 un-completed items with same name, and order of the 2nd one hasn't been changed"
+"failed","Sun Jan 15 23:03:46 GMT 2023","Sun Jan 15 23:03:51 GMT 2023","5075","tests.create_todo.negative","test_create_invalid_name","","","","Creation of a new unique item by keyboard 'Enter' button","Precondition: Count total items before test
+Create a new todo item by input 'Enter'
+Validate that new item appeared in the top of TODO list"
+"passed","Sun Jan 15 23:03:51 GMT 2023","Sun Jan 15 23:03:51 GMT 2023","85","tests.create_todo.positive","test_create_by_keyboard","","","","Creation of a new unique item by keyboard 'Enter' button","Precondition: Count total items before test
+Create a new todo item by input 'Enter'
+Validate that new item appeared in the top of TODO list"
+"passed","Sun Jan 15 23:03:52 GMT 2023","Sun Jan 15 23:03:52 GMT 2023","104","tests.create_todo.positive","test_create_by_button","","","","Creation of a new unique item by button","Precondition: Count total items before test
+Create a new todo item by clicking '+' button
+Validate that new item appeared in the top of TODO list"
+"passed","Sun Jan 15 23:03:39 GMT 2023","Sun Jan 15 23:03:39 GMT 2023","106","tests.delete_todo.positive","test_delete_item","","","","Completed item Deletion by button","1. Precondition: Check if there is a completed item in the list
+2. Click on X deletion button of first completed item
+3. Validate that new item appeared in the top of TODO list
+Total number of elements decreased by 1
+"
+"passed","Sun Jan 15 23:03:52 GMT 2023","Sun Jan 15 23:03:52 GMT 2023","84","tests.create_todo.positive","test_create_by_keyboard","","","","Creation of a new unique item by keyboard 'Enter' button","Precondition: Count total items before test
+Create a new todo item by input 'Enter'
+Validate that new item appeared in the top of TODO list"
+"passed","Sun Jan 15 23:03:27 GMT 2023","Sun Jan 15 23:03:27 GMT 2023","115","tests.create_todo.positive","test_create_by_button","","","","Creation of a new unique item by button","Precondition: Count total items before test
+Create a new todo item by clicking '+' button
+Validate that new item appeared in the top of TODO list"
+"passed","Sun Jan 15 23:03:45 GMT 2023","Sun Jan 15 23:03:45 GMT 2023","206","tests.uncomplete_todo.positive","test_reuncomplete_item","","","","Re-un-completion of a previously uncompleted item","Precondition: 1. Check if there is a un-completed item in the list, 2. complete this item
+click on '[X]' parenthesis in order to complete the item
+Selected item has changed its order - it appeared in the top of 'TODO list', 'X' disappeared inside parenthesis"
+"failed","Sun Jan 15 23:03:28 GMT 2023","Sun Jan 15 23:03:33 GMT 2023","5252","tests.create_todo.positive","test_recreate_deleted_completed_item","","","","Re-creation of an item after deletion (completed)","Precondition: create, complete, and delete new TODO item
+Create a new todo item with same name as in precondition
+Validate that new item appeared in the top of TODO list"
+"passed","Sun Jan 15 23:03:28 GMT 2023","Sun Jan 15 23:03:28 GMT 2023","170","tests.create_todo.positive","test_create_non-unique_unchecked","","","","Creation of a non-unique unchecked item","Precondition: Count total items before test, create item with 'Un-completed item' name
+Create a new todo item with same name as from precondition, by clicking '+' button
+Validate that there are 2 un-completed items with same name, and order of the 2nd one hasn't been changed"
+"passed","Sun Jan 15 23:03:21 GMT 2023","Sun Jan 15 23:03:21 GMT 2023","154","tests.complete_todo.positive","test_recomplete_item","","","","Re-completion of a previously completed item","Precondition: 1. Check if there is a completed item in the list, 2. Un-complete this item
+click on '[]' parenthesis in order to complete the item
+Selected item has changed its order - it appeared in the bottom of 'TODO list', 'X' appeared inside parenthesis"
+"passed","Sun Jan 15 23:03:46 GMT 2023","Sun Jan 15 23:03:46 GMT 2023","125","tests.uncomplete_todo.positive","test_uncomplete_last_item","","","","Un-completion of a last completed item","Precondition: Check if There are 2 items on the list: 1 is completed, 1 is uncompleted
+click on '[]' parenthesis in order to complete last uncompleted items
+Selected item has changed its order - it appeared in the bottom of 'TODO list', 'X' appeared inside parenthesis"
