@@ -46,7 +46,7 @@ jobs:
 
     - name: Test with pytest
       run: |
-        python -m pytest -v --alluredir=../allure-results
+        python -m pytest -v --alluredir=allure-results
 
     - name: Get Allure history
       uses: actions/checkout@v2
